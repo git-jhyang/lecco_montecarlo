@@ -1,0 +1,88 @@
+ 
+ ===========================================================================
+                                 Serial run                                 
+ ===========================================================================
+ 
+  Number of processors            :     1
+ 
+ 
+ ===========================================================================
+                              Input parameters                              
+ ===========================================================================
+ 
+  Input file                      : gen.in
+ 
+  Parameters for geometry generation --------------------------------------
+    Minimum distance btw. atoms   :        0.600
+    Global rotation angle         :        2.094
+    Global rotation grid          :        4
+    Local rotation angles (x,y,z) :      4.712     4.712     3.142
+    Local rotation grid   (x,y,z) :      9         9         6
+    Translation min/max (y)       :     -3.000     1.000
+    Translation grid    (y)       :      4
+    Translation min/max (z)       :     -4.000     0.000
+    Translation grid    (z)       :      4
+ 
+  File management --------------------------------------------------------
+    Number of input coordination  :        2
+    Input coordination filename   : POSCAR_edsa
+      Center of coordinate        :     10.000    10.026    10.000
+      Direction of coordinate     :      1.448     4.009     0.000
+    Input coordination filename   : POSCAR_pyrrole1
+      Center of coordinate        :     12.421    10.600     8.000
+      Direction of coordinate     :      0.000     1.000     0.000
+    Output coordination filename  : CONTCAR
+ 
+ 
+ ===========================================================================
+                           Coordinate information                           
+ ===========================================================================
+ 
+  Coordination No.  1 -----------------------------------------------------
+    Coordination filename         : POSCAR_edsa
+    Connects two latt.points      :    F
+    Number of atom species        :    4
+    Atom types                    :    C   H   O   S
+    Number of atoms               :    2   4   6   2
+    Cartesian coordinates         : 
+         -0.5489891      0.1983556     -0.4725032
+          0.5509499     -0.1990640      0.4739278
+         -1.4437832     -0.4342435     -0.3509021
+         -0.8327932      1.2567947     -0.3509021
+          1.4475694      0.4345632      0.3544150
+          0.8355006     -1.2594606      0.3544150
+         -1.0768989      0.3890950     -3.0173906
+          1.1707599      0.8447544     -2.3013722
+          0.3604324     -1.3979904     -2.3013722
+          1.0724504     -0.3874877      3.0226557
+         -1.1718648     -0.8471197      2.2956534
+         -0.3597703      1.4005156      2.2956534
+          0.0000000      0.0000000     -2.1312314
+         -0.0000000      0.0000000      2.1312314
+ 
+  Coordination No.  2 -----------------------------------------------------
+    Coordination filename         : POSCAR_pyrrole1
+    Connects two latt.points      :    F
+    Number of atom species        :    3
+    Atom types                    :    C   H   N
+    Number of atoms               :    4   3   1
+    Cartesian coordinates         : 
+         -0.6858798     -2.0000000     -3.3821021
+          0.7189011     -2.0000000     -3.3705772
+          1.1299881     -2.0000000     -2.0473566
+         -1.1181457     -2.0000000     -2.0650850
+         -1.3272683     -2.0000000     -4.2616614
+          1.3778786     -2.0000000     -4.2385137
+         -0.0151178     -2.0000000     -0.2632883
+          0.0000000     -2.0000000     -1.2793905
+ 
+ 
+  Elapsed time for initialization :          1.08s
+   Total Number of Coordinate     :    31104
+   Number of Generated Coordinate :    28882
+  Elapsed Time :          7.88
+ 
+ ===========================================================================
+                             GENERATION FINISHED                            
+ ===========================================================================
+ 

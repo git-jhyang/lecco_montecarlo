@@ -1,0 +1,20 @@
+TYPES
+6
+C
+C1
+H
+N
+O
+S
+
+NETWORKS
+  C   ann_C.ann
+ C1  ann_C1.ann
+  H   ann_H.ann
+  N   ann_N.ann
+  O   ann_O.ann
+  S   ann_S.ann
+
+FILES
+1
+CONTCAR_OUT_INIT.xsf

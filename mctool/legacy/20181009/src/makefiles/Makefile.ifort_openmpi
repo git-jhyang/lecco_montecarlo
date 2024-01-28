@@ -1,0 +1,33 @@
+
+.SUFFIXES: .f90 .o .x
+
+config :
+	make -C ./ext lfort
+	make -C ./aenet-1.0.0_src -f makefiles/Makefile.ifort_mpi lib
+
+include ./Makefile.inc
+
+# compiler ==========================================================
+
+MPIFC = mpif90
+
+MPIFLAGS = -g -O
+
+# libraries =========================================================
+
+# intel mkl
+
+INC_MKL = -i8 -I$(MKLROOT)/include
+LIB_MKL = -Wl,--start-group ${MKLROOT}/lib/intel64/libmkl_intel_ilp64.a \
+	${MKLROOT}/lib/intel64/libmkl_sequential.a \
+	${MKLROOT}/lib/intel64/libmkl_core.a \
+	${MKLROOT}/lib/intel64/libmkl_blacs_openmpi_ilp64.a -Wl,--end-group -lpthread -lm -ldl
+
+# gathering 
+
+ALLLIB = $(LIB_EXT) $(LIB_MKL) $(LIB_AENET)
+ALLINC = $(INC_EXT) $(INC_MKL) $(INC_AENET)
+
+# ==================================================================
+
+

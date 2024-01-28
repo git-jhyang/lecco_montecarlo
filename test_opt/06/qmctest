@@ -1,0 +1,15 @@
+#!/bin/sh
+#$ -S /bin/sh
+#$ -cwd
+#$ -V
+#$ -v MPIHOME=/APP/enhpc/mpi/openmpi-intel/bin
+#$ -v PRGHOME=/home/jhyang/documents/mcprg_yjh/bin/
+#$ -j y
+#$ -q short.q
+
+#$ -N mctest_06
+#$ -pe mpich_ef 1
+
+#$ -o log.out
+
+$MPIHOME/mpirun -np $NSLOTS -machinefile $TMPDIR/machines $PRGHOME/opt.x > opt.out

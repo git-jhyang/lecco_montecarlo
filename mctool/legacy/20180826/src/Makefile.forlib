@@ -1,0 +1,102 @@
+
+TG_TST = ../bin/test
+TG_OPT = ../bin/mc_opt
+TG_GEN = ../bin/mc_cgen
+TGS    = $(TG_TST) $(TG_OPT) $(TG_GEN)
+
+LOC_FLIB = /home/jhyang/codes/lib_fortran
+LOC_MTST = $(LOC_FLIB)/mt_stream_f90-1.11
+#LOC_INT = /APP/enhpc/compiler/intel/v11.7/256
+LOC_INT = /opt/intel
+LOC_MPI = /usr/local/bin
+
+
+MPIFC = $(LOC_MPI)/mpif90
+#MPIFC = mpif90
+
+MPIFLAG = -g -O
+
+#FC = $(LOC_INT)/bin/ifort
+FC = $(MPIFC)
+
+FFLAG = -g -O
+
+# local library
+# FLIB = $(LOC_FLIB)/vartype.o $(LOC_FLIB)/util.o $(LOC_FLIB)/mt19937.o
+
+LOCLIB = -L$(LOC_FLIB) -lloc_flib #\
+         $(LOC_MTST)/mt_stream.o $(LOC_MTST)/f_jump_ahead_coeff/gf2xe.o	\
+	 $(LOC_MTST)/f_jump_ahead_coeff/f_get_coeff.o
+
+LOCINC = -I$(LOC_FLIB) -I$(LOC_MTST)
+
+# intel mkl
+
+MKLINC = -I$(LOC_INT)/mkl/include
+MKLLIB = -L$(LOC_INT)/mkl/lib/intel64 -lmkl_scalapack_lp64 \
+	 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lmkl_blacs_openmpi_lp64	\
+	 -lpthread -lm -ldl
+
+# gathering
+
+ALLLIB = $(LOCLIB) $(MKLLIB)
+ALLINC = $(LOCINC) $(MKLINC)
+
+# objects
+
+OBJ_PARALLEL = parallel.o
+
+OBJ_SERIAL   = mcio.o  input.o  coordinate.o  lattice.o
+
+OBJS =  $(OBJ_SERIAL)  $(OBJ_PARALLEL)
+
+
+
+.PHONY:  help  test  opt  gen  clean
+
+help :
+	#
+	#   help	: print this help
+	#   test	: create test object with 'test.f90'
+	#   opt		: create optimizer program
+	#   gen		: create coordinate generation program
+	#   clean	: remove created files
+	#
+
+test : $(OBJS) test.o
+	$(MPIFC) -o $(TG_TST) test.o $(OBJS) $(ALLLIB)
+
+opt : $(OBJS) main_opt.o
+	$(MPIFC) -o $(TG_OPT) main_opt.o $(OBJS) $(ALLLIB)
+
+gen : $(OBJS) main_gen.o
+	$(FC) -o $(TG_GEN) main_gen.o $(OBJS) $(ALLLIB)
+
+pylib : $(OBJS)
+	f2py --overwrite-signature -m libloc_pylibs \
+	     -h libloc_pylibs.pyf $(patsubst %.o, %.f90, $(OBJS))
+	f2py --include-paths $(LOC_FLIB) --fcompiler=$(FC) \
+	     --compiler=$(LOC_IC)/icc -c libloc_pylibs.pyf \
+	     $(patsubst %.o, %.f90, $(OBJS))
+
+test.o : test.f90
+	$(MPIFC) -c $(MPIFLAG) test.f90 $(ALLINC)
+
+main_opt.o : main_opt.f90
+	$(MPIFC) -c $(MPIFLAG) main_opt.f90 $(ALLINC)
+
+main_gen.o : main_gen.f90
+	$(FC) -c $(FFLAG) main_gen.f90 $(ALLINC)
+
+# Modules
+
+$(filter %.o, $(OBJ_SERIAL)): %.o : %.f90
+	$(FC) -c $(FFLAG) $< $(LOCINC)
+
+$(filter %.o, $(OBJ_PARALLEL)): %.o : %.f90
+	$(MPIFC) -c $(FFLAG) $< $(LOCINC)
+
+# Subroutines
+
+clean :
+	rm -f *.o *.mod $(TGS)

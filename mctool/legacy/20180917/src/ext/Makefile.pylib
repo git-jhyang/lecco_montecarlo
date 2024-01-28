@@ -1,0 +1,99 @@
+BUILD    = --build-dir .
+
+#LOC_IC	 = /opt/intel
+#LOC_IC   = /APP/enhpc/compiler/intel/v11.7/256
+
+FC	 = ifort
+FCFLAGS  = -c -fPIC
+
+FCOMP    = intelem
+
+FPPC     = gfortran -E
+FPPFLAGS = -x f95-cpp-input -fPIC
+
+LOC_MTST = ./mt_stream_f90-1.11
+
+KIND_MAP = kind_map
+
+LIBNAME  = liblocfort
+
+LOCLIB   = -L. -llocfort
+
+#=================================================================
+
+SRC      = constants util
+
+SRC_MT   = mt_serial
+SRC_MTST = $(LOC_MTST)/mt_stream \
+	   $(LOC_MTST)/f_jump_ahead_coeff/gf2xe \
+	   $(LOC_MTST)/f_jump_ahead_coeff/f_get_coeff \
+	   $(LOC_MTST)/mt_kind_defs
+
+#=================================================================
+
+OBJS      = $(addsuffix .o, ${SRC})
+OBJS_MT   = $(addsuffix .o, ${SRC_MT}) $(addsuffix .o, ${SRC_MTST}) 
+FPPS      = $(addsuffix .fpp, ${SRC})
+
+#=================================================================
+
+.PHONY: help all l4fortran l4python linc clean veryclean
+.SUFFIXES: .f90 .fpp .o
+
+help :
+	#
+	#    help      : print this help
+	#    l4fortran : make library file '$(LIBNAME).a' for fortran
+	#                should 'INCLUDE' paths '.' and './mtstream4py_f90'
+	#    l4python  : make library file '_$(LIBNAME).so' for python
+	#    linc      : check '$(LIBNAME).a'
+	#    clean     : remove created files
+	#    veryclean : 'clean' with mt_stream created file
+	#
+
+all : l4fortran l4python #l4python_pkg
+
+l4fortran : $(LIBNAME).a
+l4python  : l4fortran _$(LIBNAME).so
+#l4python_pkg : l4fortran _$(LIBNAME)_pkg.so
+
+linc : l4fortran
+	ar t $(LIBNAME).a
+
+#=======================================================================
+
+$(LIBNAME).a : $(OBJS) $(OBJS_MT) build_mtst
+	ar scruv $@ $(OBJS) $(OBJS_MT)
+
+_$(LIBNAME).so : $(LIBNAME).a $(FPPS)
+	f90wrap -m $(LIBNAME) $(FPPS) -k $(KIND_MAP) -v
+	f2py-f90wrap --fcompiler=$(FCOMP) $(BUILD) -c -m \
+		_$(LIBNAME) $(LOCLIB) f90wrap*.f90
+
+#_$(LIBNAME)_pkg.so : $(LIBNAME).a $(FPPS)
+#	f90wrap -m $(LIBNAME)_pkg $(FPPS) -k $(KIND_MAP) -v -P
+#	f2py-f90wrap --fcompiler=$(FCOMP) $(BUILD) -c -m \
+		_$(LIBNAME)_pkg $(LOCLIB) f90wrap*.f90
+
+build_mtst : 
+	make -C $(LOC_MTST) all
+
+.f90.o : 
+	$(FC) $(FCFLAGS) $< -o $@
+
+.f90.fpp :
+	$(FPPC) $(FPPFLAGS) $< -o $@
+
+util.o : constants.o
+
+clean :
+	if [ -e $(LIBNAME).a ]; then rm -f $(LIBNAME).a; fi
+	if [ -e _$(LIBNAME)_pkg.so ]; then rm -f _$(LIBNAME)_pkg.so; fi
+	if [ -e _$(LIBNAME).so ]; then rm -f _$(LIBNAME).so $(LIBNAME).py $(LIBNAME).pyc; fi
+	rm -f *.o *.fpp *.mod f90wrap_*.o f90wrap_*.f90 .f2py*
+	if [ -d $(LIBNAME)_pkg ]; then rm -r $(LIBNAME)_pkg; fi
+	if [ -d extra-dll ]; then rm -r extra-dll; fi
+	if [ -d src.* ]; then rm -r src.*; fi
+
+veryclean: clean
+	make -C $(LOC_MTST) clean

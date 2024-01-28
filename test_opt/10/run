@@ -1,0 +1,4 @@
+mpirun -np 1 /home/jhyang/documents/mcprg_yjh/bin/opt.x > opt.out
+#poscar_2_xsf.py CONTCAR_OUT_INIT
+#mpirun -np 1 /home/jhyang/CODES/aenet-1.0.0/bin/predict.x-1.0.0-ifort_mpi predict.in > predict.out
+

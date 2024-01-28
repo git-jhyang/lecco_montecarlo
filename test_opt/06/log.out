@@ -1,0 +1,191 @@
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12422.1/pe_hostfile
+node01
+node01
+node01
+node01
+node01
+node01
+node01
+node01
+node01
+node01
+node01
+node01
+-catch_rsh /engrid/ensge/default/spool/node02/active_jobs/12423.1/pe_hostfile
+node02
+node02
+node02
+node02
+node02
+node02
+node02
+node02
+node02
+node02
+node02
+node02
+-catch_rsh /engrid/ensge/default/spool/node03/active_jobs/12424.1/pe_hostfile
+node03
+node03
+node03
+node03
+node03
+node03
+node03
+node03
+node03
+node03
+node03
+node03
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12430.1/pe_hostfile
+node01
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12436.1/pe_hostfile
+node01
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 31388 on
+node node01 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12437.1/pe_hostfile
+node01
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 31518 on
+node node01 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12443.1/pe_hostfile
+node01
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 32114 on
+node node01 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12450.1/pe_hostfile
+node01
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 334 on
+node node01 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12485.1/pe_hostfile
+node01
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 3135 on
+node node01 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12495.1/pe_hostfile
+node01
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 4006 on
+node node01 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12504.1/pe_hostfile
+node01
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 5638 on
+node node01 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12513.1/pe_hostfile
+node01
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 6540 on
+node node01 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12522.1/pe_hostfile
+node01
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 7599 on
+node node01 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12531.1/pe_hostfile
+node01
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 8545 on
+node node01 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12564.1/pe_hostfile
+node01
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 12673 on
+node node01 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12573.1/pe_hostfile
+node01
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 13785 on
+node node01 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12582.1/pe_hostfile
+node01
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 15307 on
+node node01 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12591.1/pe_hostfile
+node01
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 16370 on
+node node01 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12600.1/pe_hostfile
+node01
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 17341 on
+node node01 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node02/active_jobs/12609.1/pe_hostfile
+node02
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 7544 on
+node node02 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12618.1/pe_hostfile
+node01
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 18597 on
+node node01 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node02/active_jobs/12627.1/pe_hostfile
+node02
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 8448 on
+node node02 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+--------------------------------------------------------------------------
+-catch_rsh /engrid/ensge/default/spool/node01/active_jobs/12636.1/pe_hostfile
+node01
+-catch_rsh /engrid/ensge/default/spool/node02/active_jobs/12645.1/pe_hostfile
+node02
+-catch_rsh /engrid/ensge/default/spool/node03/active_jobs/12654.1/pe_hostfile
+node03

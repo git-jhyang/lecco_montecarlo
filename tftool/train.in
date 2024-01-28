@@ -1,0 +1,32 @@
+
+
+#TRAININGSET    /home/jhyang/Downloads/aenet/tests/GEN_07_with_PyCrystal/PyBPDSA.train.07
+#TRAININGSET    /home/jhyang/Downloads/aenet/tests/GEN_08_with_PyCrystal_C1E/PyBPDSA.train.08
+#TRAININGSET    /home/jhyang/Downloads/aenet/tests/GEN_04/PyBPDSA.train
+
+TRAININGSET    /home/jhyang/Downloads/aenet/tests/GEN_OUTPUTS/PyBPDSA.train.10
+TESTPERCENT    25
+
+MAXENERGY      3.5
+
+METHOD
+# GD    learning_rate=0.002
+Adam
+
+
+EPOCH.MAX      50000
+EPOCH.CKPT     500
+
+BATCH.SIZE     1000
+
+FLOAT.PREC     64
+
+OUTPUT.PATH    /home/jhyang/Downloads/tf_train
+
+NETWORKS
+C   ann-C   2   42:relu 42:relu
+C1  ann-C1  2   42:relu 42:relu
+H   ann-H   2   42:relu 42:relu
+N   ann-N   2   42:relu 42:relu
+O   ann-O   2   42:relu 42:relu
+S   ann-S   2   36:relu 36:relu

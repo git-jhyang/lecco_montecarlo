@@ -1,0 +1,336 @@
+DESCR
+
+END DESCR
+
+ATOM O
+
+ENV 6
+C
+C1
+H
+N
+O
+S
+
+RMIN 0.75d0
+
+SYMMFUNC type=Behler2011
+318
+G=2 type2=C eta=0.0032000 Rs=0.0000 Rc=6.5000
+G=2 type2=C eta=0.0351000 Rs=0.0000 Rc=6.5000
+G=2 type2=C eta=0.0702000 Rs=0.0000 Rc=6.5000
+G=2 type2=C eta=0.1250000 Rs=0.0000 Rc=6.5000
+G=2 type2=C eta=0.2120000 Rs=0.0000 Rc=6.5000
+G=2 type2=C eta=0.3500000 Rs=0.0000 Rc=6.5000
+G=2 type2=C eta=0.7080000 Rs=0.0000 Rc=6.5000
+G=2 type2=C eta=1.5210000 Rs=0.0000 Rc=6.5000
+G=2 type2=C1 eta=0.0032000 Rs=0.0000 Rc=6.5000
+G=2 type2=C1 eta=0.0351000 Rs=0.0000 Rc=6.5000
+G=2 type2=C1 eta=0.0702000 Rs=0.0000 Rc=6.5000
+G=2 type2=C1 eta=0.1250000 Rs=0.0000 Rc=6.5000
+G=2 type2=C1 eta=0.2120000 Rs=0.0000 Rc=6.5000
+G=2 type2=C1 eta=0.3500000 Rs=0.0000 Rc=6.5000
+G=2 type2=C1 eta=0.7080000 Rs=0.0000 Rc=6.5000
+G=2 type2=C1 eta=1.5210000 Rs=0.0000 Rc=6.5000
+G=2 type2=H eta=0.0032000 Rs=0.0000 Rc=6.5000
+G=2 type2=H eta=0.0351000 Rs=0.0000 Rc=6.5000
+G=2 type2=H eta=0.0702000 Rs=0.0000 Rc=6.5000
+G=2 type2=H eta=0.1250000 Rs=0.0000 Rc=6.5000
+G=2 type2=H eta=0.2120000 Rs=0.0000 Rc=6.5000
+G=2 type2=H eta=0.3500000 Rs=0.0000 Rc=6.5000
+G=2 type2=H eta=0.7080000 Rs=0.0000 Rc=6.5000
+G=2 type2=H eta=1.5210000 Rs=0.0000 Rc=6.5000
+G=2 type2=N eta=0.0032000 Rs=0.0000 Rc=6.5000
+G=2 type2=N eta=0.0351000 Rs=0.0000 Rc=6.5000
+G=2 type2=N eta=0.0702000 Rs=0.0000 Rc=6.5000
+G=2 type2=N eta=0.1250000 Rs=0.0000 Rc=6.5000
+G=2 type2=N eta=0.2120000 Rs=0.0000 Rc=6.5000
+G=2 type2=N eta=0.3500000 Rs=0.0000 Rc=6.5000
+G=2 type2=N eta=0.7080000 Rs=0.0000 Rc=6.5000
+G=2 type2=N eta=1.5210000 Rs=0.0000 Rc=6.5000
+G=2 type2=O eta=0.0032000 Rs=0.0000 Rc=6.5000
+G=2 type2=O eta=0.0351000 Rs=0.0000 Rc=6.5000
+G=2 type2=O eta=0.0702000 Rs=0.0000 Rc=6.5000
+G=2 type2=O eta=0.1250000 Rs=0.0000 Rc=6.5000
+G=2 type2=O eta=0.2120000 Rs=0.0000 Rc=6.5000
+G=2 type2=O eta=0.3500000 Rs=0.0000 Rc=6.5000
+G=2 type2=O eta=0.7080000 Rs=0.0000 Rc=6.5000
+G=2 type2=O eta=1.5210000 Rs=0.0000 Rc=6.5000
+G=2 type2=S eta=0.0032000 Rs=0.0000 Rc=6.5000
+G=2 type2=S eta=0.0351000 Rs=0.0000 Rc=6.5000
+G=2 type2=S eta=0.0702000 Rs=0.0000 Rc=6.5000
+G=2 type2=S eta=0.1250000 Rs=0.0000 Rc=6.5000
+G=2 type2=S eta=0.2120000 Rs=0.0000 Rc=6.5000
+G=2 type2=S eta=0.3500000 Rs=0.0000 Rc=6.5000
+G=2 type2=S eta=0.7080000 Rs=0.0000 Rc=6.5000
+G=2 type2=S eta=1.5210000 Rs=0.0000 Rc=6.5000
+G=4 type2=C type3=C eta=0.0003100 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=C eta=0.0003100 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=C eta=0.0003100 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=C eta=0.0003100 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=C eta=0.0003100 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=C eta=0.0003100 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=C eta=0.0290000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=C eta=0.0290000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=C eta=0.0290000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=C eta=0.0290000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=C eta=0.0290000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=C eta=0.0290000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=C eta=0.0871000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=C eta=0.0871000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=C eta=0.0871000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=C eta=0.0871000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=C eta=0.0871000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=C eta=0.0871000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0003100 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0003100 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0003100 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0003100 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0003100 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0003100 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0290000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0290000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0290000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0290000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0290000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0290000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0871000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0871000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0871000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0871000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0871000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=C1 eta=0.0871000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0003100 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0003100 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0003100 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0003100 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0003100 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0003100 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0290000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0290000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0290000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0290000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0290000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0290000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0871000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0871000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0871000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0871000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0871000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=H eta=0.0871000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0003100 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0003100 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0003100 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0003100 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0003100 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0003100 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0290000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0290000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0290000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0290000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0290000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0290000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0871000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0871000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0871000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0871000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0871000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=N eta=0.0871000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0003100 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0003100 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0003100 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0003100 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0003100 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0003100 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0290000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0290000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0290000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0290000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0290000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0290000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0871000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0871000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0871000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0871000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0871000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=O eta=0.0871000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0003100 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0003100 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0003100 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0003100 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0003100 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0003100 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0290000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0290000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0290000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0290000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0290000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0290000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0871000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0871000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0871000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0871000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0871000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C type3=S eta=0.0871000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0003100 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0003100 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0003100 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0003100 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0003100 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0003100 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0290000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0290000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0290000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0290000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0290000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0290000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0871000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0871000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0871000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0871000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0871000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=C1 eta=0.0871000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0003100 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0003100 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0003100 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0003100 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0003100 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0003100 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0290000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0290000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0290000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0290000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0290000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0290000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0871000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0871000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0871000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0871000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0871000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=H eta=0.0871000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0003100 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0003100 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0003100 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0003100 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0003100 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0003100 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0290000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0290000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0290000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0290000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0290000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0290000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0871000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0871000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0871000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0871000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0871000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=N eta=0.0871000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0003100 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0003100 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0003100 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0003100 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0003100 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0003100 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0290000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0290000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0290000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0290000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0290000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0290000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0871000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0871000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0871000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0871000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0871000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=O eta=0.0871000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0003100 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0003100 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0003100 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0003100 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0003100 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0003100 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0290000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0290000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0290000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0290000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0290000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0290000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0871000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0871000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0871000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0871000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0871000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=C1 type3=S eta=0.0871000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0003100 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0003100 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0003100 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0003100 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0003100 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0003100 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0290000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0290000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0290000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0290000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0290000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0290000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0871000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0871000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0871000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0871000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0871000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=N eta=0.0871000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0003100 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0003100 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0003100 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0003100 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0003100 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0003100 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0290000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0290000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0290000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0290000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0290000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0290000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0871000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0871000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0871000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0871000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0871000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=O eta=0.0871000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0003100 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0003100 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0003100 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0003100 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0003100 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0003100 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0290000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0290000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0290000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0290000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0290000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0290000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0871000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0871000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0871000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0871000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0871000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=H type3=S eta=0.0871000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0003100 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0003100 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0003100 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0003100 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0003100 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0003100 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0290000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0290000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0290000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0290000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0290000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0290000 lambda=-1.00 zeta=4.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0871000 lambda=1.00 zeta=1.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0871000 lambda=1.00 zeta=2.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0871000 lambda=1.00 zeta=4.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0871000 lambda=-1.00 zeta=1.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0871000 lambda=-1.00 zeta=2.00 Rc=6.5000
+G=4 type2=N type3=O eta=0.0871000 lambda=-1.00 zeta=4.00 Rc=6.5000

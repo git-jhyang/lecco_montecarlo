@@ -1,0 +1,29 @@
+
+.SUFFIXES: .f90 .o .x
+
+include ./Makefile.inc
+
+config :
+	make -C ./ext lfort
+	make -C $(LOC_AENET) -f makefiles/Makefile.gfortran_serial lib
+	sed -i "s/inquire(directory/inquire(file/g" input.f90
+
+# compiler ==========================================================
+
+MPIHOME = /opt/openmpi/gfort-3.1.3
+
+MPIFC = $(MPIHOME)/bin/mpif90
+
+MPIFLAGS = -g -O3
+BLAS = -lblas
+LAPACK = -llapack
+
+# libraries =========================================================
+
+INC_COMPILER = -I$(MPIHOME)/include
+LIB_COMPILER = $(BLAS) $(LAPACK) -L$(MPIHOME)/lib -lmpi
+
+
+# ==================================================================
+
+

@@ -1,0 +1,21 @@
+
+   Compile from the main 'src' directory with:
+
+      make -f ./makefiles/[MAKEFILE] [OPTION]
+
+   [MAKEFILE] is one of the files listed below.
+
+      Makefile.ifort_intelmpi : intel fortran compiler with intel mpi
+      Makefile.ifort_openmpi  : intel fortran compiler with openmpi
+
+   [OPTION] is one of the option listed below.
+
+      help      : print this help
+      config    : pre-compilation of libraries
+      opt       : structure optimizer
+      gen       : coordinate generator
+      test      : test program
+      all       : 'config' then 'opt' and 'gen'
+      clean     : clean 'src' directory
+      veryclean : clean 'src' and libraries in subdirectories
+

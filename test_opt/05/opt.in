@@ -1,0 +1,52 @@
+NUM.UNITS  3
+
+FILE.COO.IN
+   POSCAR_bpdsa
+   POSCAR_pyrrole
+   POSCAR_pyrrole
+END
+
+N.SPECIES      6  4  4  
+N.ATOM        28  8  8
+
+L.CONNECT    .true. .false. .false. 
+
+UNIT.CENTER
+ 10.0  17.5  10.0
+  5.166588997312050 8.0  4.5
+  2.166588997312050 8.0  4.5
+END
+
+UNIT.DIRECTION
+   0.0   1.0   0.0
+   0.0   1.0   0.0
+   0.0  -1.0   0.0
+END
+
+OPT.SITE  10
+OPT.MIG    10
+OPT.TRY    200
+
+TEMPERATURE   500.0
+
+L.SELEC.SITE   .true.
+L.SELEC.UNIT   .true.
+
+LATT.TYPE     FC
+LATT.DIM      2  1  1
+RATE.OCC      1.0 
+
+FILE.COO.OUT    CONTCAR
+L.TRAJECT    .true.
+
+ENE.METHOD    AENET
+
+AENET.NETWORKS
+C   C.ann
+C1  C1.ann
+H   H.ann
+N   N.ann
+O   O.ann
+S   S.ann
+END
+

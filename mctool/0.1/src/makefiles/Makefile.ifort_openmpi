@@ -1,0 +1,31 @@
+
+.SUFFIXES: .f90 .o .x
+
+
+include ./Makefile.inc
+
+config :
+	make -C ./ext -f Makefile.ifort lfort
+	make -C $(LOC_AENET) -f makefiles/Makefile.ifort_intelmpi lib
+	sed -i "s/inquire(file/inquire(directory/g" input.f90
+
+# compiler ==========================================================
+
+MPIHOME = 
+
+MPIFC   = $(MPIHOME)/bin/mpif90
+
+MPIFLAGS = -g -O3
+
+# libraries =========================================================
+
+# intel mkl
+
+INC_COMPILER = -i8 -I$(MKLROOT)/include
+LIB_COMPILER = -Wl,--start-group ${MKLROOT}/lib/intel64/libmkl_intel_ilp64.a \
+	${MKLROOT}/lib/intel64/libmkl_sequential.a \
+	${MKLROOT}/lib/intel64/libmkl_core.a \
+	${MKLROOT}/lib/intel64/libmkl_blacs_openmpi_ilp64.a -Wl,--end-group -lpthread -lm -ldl
+
+
+

@@ -1,0 +1,2332 @@
+ ----------------------------------------------------------------------
+                              Parallel run                             
+ ----------------------------------------------------------------------
+ 
+ Number of processes : 20
+ 
+ ======================================================================
+                  Atomic Energy Network Interpolation                  
+ ======================================================================
+                                                                       
+                          2018-09-28  15:31:43                         
+                                                                       
+ 
+ Copyright (C) 2015-2016 Nongnuch Artrith and Alexander Urban
+ 
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License in file `LICENSE' for more details.
+ 
+ Atomic species : C
+ File name      : ann_C.ann-00150
+ 
+ ----------------------------------------------------------------------
+                           Training set info.                          
+ ----------------------------------------------------------------------
+ 
+ Training set file                   : PyBPDSA.train.scaled
+ Number of structures in the data set: 24049
+ 
+ Atomic species in training set      : 6
+   Species : C C1 H N O S
+ 
+ Average energy (eV/atom) : -0.140711
+ Minimum energy (eV/atom) : -1.000000
+ Maximum energy (eV/atom) : 1.000623
+ 
+ The input and output values have been normalized to [-1.0, 1.0].
+ Structures outside of this interval will not be used for training.
+   Energy scaling factor: 1.049667
+   Atomic energy shift  : -0.952683
+ 
+ Number of layers :   5
+ 
+ Number of nodes (without bias) 
+ and activation type per layer :
+ 
+       1 :   368
+       2 :   160  rectified linear unit (relu)
+       3 :    40  rectified linear unit (relu)
+       4 :     8  rectified linear unit (relu)
+       5 :     1  linear function (linear)
+ 
+ Dynamically allocated words :  101297811 ( 791389.15 KB)
+ 
+ Total number of weights (incl. bias) :    65817
+ 
+ Structural fingerprint (SF) set-up for C
+ 
+ 
+ 
+ environment types: C  C1 H  N  O  S  
+ minimal distance : 0.75 Angstrom
+ maximal cut-off  : 6.50 Angstrom
+ size of basis    : 368
+ evaluations      : 204582
+ 
+ Basis function type Behler2011
+ 
+ [see also: J. Behler, J. Chem. Phys. 134 (2011) 074106]
+ 
+ 
+      G  parameters
+ 
+   1  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.003
+   2  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.035
+   3  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.070
+   4  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.125
+   5  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.212
+   6  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.350
+   7  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.708
+   8  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   1.521
+   9  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.003
+  10  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.035
+  11  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.070
+  12  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.125
+  13  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.212
+  14  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.350
+  15  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.708
+  16  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   1.521
+  17  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.003
+  18  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.035
+  19  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.070
+  20  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.125
+  21  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.212
+  22  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.350
+  23  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.708
+  24  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   1.521
+  25  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.003
+  26  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.035
+  27  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.070
+  28  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.125
+  29  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.212
+  30  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.350
+  31  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.708
+  32  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   1.521
+  33  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.003
+  34  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.035
+  35  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.070
+  36  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.125
+  37  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.212
+  38  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.350
+  39  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.708
+  40  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   1.521
+  41  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.003
+  42  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.035
+  43  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.070
+  44  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.125
+  45  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.212
+  46  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.350
+  47  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.708
+  48  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   1.521
+  49  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  50  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  51  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  52  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  53  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  54  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  55  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  56  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  57  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  58  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  59  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  60  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  61  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  62  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  63  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  64  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  65  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  66  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  67  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  68  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  69  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  70  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  71  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  72  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  73  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  74  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  75  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  76  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  77  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  78  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  79  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  80  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  81  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  82  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  83  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  84  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  85  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  86  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  87  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  88  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  89  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  90  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  91  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  92  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  93  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  94  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  95  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  96  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  97  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  98  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  99  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 100  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 101  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 102  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 103  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 104  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 105  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 106  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 107  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 108  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 109  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 110  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 111  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 112  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 113  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 114  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 115  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 116  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 117  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 118  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 119  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 120  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 121  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 122  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 123  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 124  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 125  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 126  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 127  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 128  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 129  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 130  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 131  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 132  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 133  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 134  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 135  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 136  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 137  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 138  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 139  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 140  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 141  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 142  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 143  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 144  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 145  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 146  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 147  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 148  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 149  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 150  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 151  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 152  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 153  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 154  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 155  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 156  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 157  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 158  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 159  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 160  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 161  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 162  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 163  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 164  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 165  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 166  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 167  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 168  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 169  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 170  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 171  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 172  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 173  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 174  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 175  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 176  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 177  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 178  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 179  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 180  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 181  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 182  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 183  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 184  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 185  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 186  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 187  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 188  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 189  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 190  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 191  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 192  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 193  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 194  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 195  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 196  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 197  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 198  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 199  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 200  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 201  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 202  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 203  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 204  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 205  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 206  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 207  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 208  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 209  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 210  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 211  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 212  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 213  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 214  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 215  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 216  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 217  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 218  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 219  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 220  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 221  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 222  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 223  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 224  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 225  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 226  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 227  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 228  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 229  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 230  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 231  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 232  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 233  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 234  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 235  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 236  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 237  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 238  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 239  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 240  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 241  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 242  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 243  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 244  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 245  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 246  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 247  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 248  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 249  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 250  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 251  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 252  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 253  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 254  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 255  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 256  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 257  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 258  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 259  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 260  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 261  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 262  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 263  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 264  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 265  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 266  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 267  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 268  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 269  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 270  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 271  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 272  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 273  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 274  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 275  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 276  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 277  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 278  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 279  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 280  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 281  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 282  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 283  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 284  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 285  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 286  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 287  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 288  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 289  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 290  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 291  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 292  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 293  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 294  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 295  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 296  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 297  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 298  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 299  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 300  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 301  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 302  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 303  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 304  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 305  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 306  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 307  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 308  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 309  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 310  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 311  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 312  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 313  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 314  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 315  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 316  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 317  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 318  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 319  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 320  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 321  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 322  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 323  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 324  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 325  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 326  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 327  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 328  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 329  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 330  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 331  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 332  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 333  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 334  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 335  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 336  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 337  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 338  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 339  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 340  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 341  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 342  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 343  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 344  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 345  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 346  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 347  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 348  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 349  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 350  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 351  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 352  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 353  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 354  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 355  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 356  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 357  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 358  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 359  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 360  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 361  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 362  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 363  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 364  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 365  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 366  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 367  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 368  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 
+ Atomic species : C1
+ File name      : ann_C1.ann-00150
+ 
+ ----------------------------------------------------------------------
+                           Training set info.                          
+ ----------------------------------------------------------------------
+ 
+ Training set file                   : PyBPDSA.train.scaled
+ Number of structures in the data set: 24049
+ 
+ Atomic species in training set      : 6
+   Species : C C1 H N O S
+ 
+ Average energy (eV/atom) : -0.140711
+ Minimum energy (eV/atom) : -1.000000
+ Maximum energy (eV/atom) : 1.000623
+ 
+ The input and output values have been normalized to [-1.0, 1.0].
+ Structures outside of this interval will not be used for training.
+   Energy scaling factor: 1.049667
+   Atomic energy shift  : -0.952683
+ 
+ Number of layers :   5
+ 
+ Number of nodes (without bias) 
+ and activation type per layer :
+ 
+       1 :   368
+       2 :   160  rectified linear unit (relu)
+       3 :    40  rectified linear unit (relu)
+       4 :     8  rectified linear unit (relu)
+       5 :     1  linear function (linear)
+ 
+ Dynamically allocated words :  101297811 ( 791389.15 KB)
+ 
+ Total number of weights (incl. bias) :    65817
+ 
+ Structural fingerprint (SF) set-up for C1
+ 
+ 
+ 
+ environment types: C  C1 H  N  O  S  
+ minimal distance : 0.75 Angstrom
+ maximal cut-off  : 6.50 Angstrom
+ size of basis    : 368
+ evaluations      : 77898
+ 
+ Basis function type Behler2011
+ 
+ [see also: J. Behler, J. Chem. Phys. 134 (2011) 074106]
+ 
+ 
+      G  parameters
+ 
+   1  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.003
+   2  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.035
+   3  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.070
+   4  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.125
+   5  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.212
+   6  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.350
+   7  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.708
+   8  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   1.521
+   9  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.003
+  10  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.035
+  11  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.070
+  12  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.125
+  13  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.212
+  14  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.350
+  15  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.708
+  16  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   1.521
+  17  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.003
+  18  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.035
+  19  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.070
+  20  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.125
+  21  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.212
+  22  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.350
+  23  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.708
+  24  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   1.521
+  25  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.003
+  26  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.035
+  27  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.070
+  28  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.125
+  29  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.212
+  30  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.350
+  31  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.708
+  32  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   1.521
+  33  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.003
+  34  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.035
+  35  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.070
+  36  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.125
+  37  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.212
+  38  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.350
+  39  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.708
+  40  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   1.521
+  41  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.003
+  42  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.035
+  43  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.070
+  44  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.125
+  45  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.212
+  46  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.350
+  47  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.708
+  48  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   1.521
+  49  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  50  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  51  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  52  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  53  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  54  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  55  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  56  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  57  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  58  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  59  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  60  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  61  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  62  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  63  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  64  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  65  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  66  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  67  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  68  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  69  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  70  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  71  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  72  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  73  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  74  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  75  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  76  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  77  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  78  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  79  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  80  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  81  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  82  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  83  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  84  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  85  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  86  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  87  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  88  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  89  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  90  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  91  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  92  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  93  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  94  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  95  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  96  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  97  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  98  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  99  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 100  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 101  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 102  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 103  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 104  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 105  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 106  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 107  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 108  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 109  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 110  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 111  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 112  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 113  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 114  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 115  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 116  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 117  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 118  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 119  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 120  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 121  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 122  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 123  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 124  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 125  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 126  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 127  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 128  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 129  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 130  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 131  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 132  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 133  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 134  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 135  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 136  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 137  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 138  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 139  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 140  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 141  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 142  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 143  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 144  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 145  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 146  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 147  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 148  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 149  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 150  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 151  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 152  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 153  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 154  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 155  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 156  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 157  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 158  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 159  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 160  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 161  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 162  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 163  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 164  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 165  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 166  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 167  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 168  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 169  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 170  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 171  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 172  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 173  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 174  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 175  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 176  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 177  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 178  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 179  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 180  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 181  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 182  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 183  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 184  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 185  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 186  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 187  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 188  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 189  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 190  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 191  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 192  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 193  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 194  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 195  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 196  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 197  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 198  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 199  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 200  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 201  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 202  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 203  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 204  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 205  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 206  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 207  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 208  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 209  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 210  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 211  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 212  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 213  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 214  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 215  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 216  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 217  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 218  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 219  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 220  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 221  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 222  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 223  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 224  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 225  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 226  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 227  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 228  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 229  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 230  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 231  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 232  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 233  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 234  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 235  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 236  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 237  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 238  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 239  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 240  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 241  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 242  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 243  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 244  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 245  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 246  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 247  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 248  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 249  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 250  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 251  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 252  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 253  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 254  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 255  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 256  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 257  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 258  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 259  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 260  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 261  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 262  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 263  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 264  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 265  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 266  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 267  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 268  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 269  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 270  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 271  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 272  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 273  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 274  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 275  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 276  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 277  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 278  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 279  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 280  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 281  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 282  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 283  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 284  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 285  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 286  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 287  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 288  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 289  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 290  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 291  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 292  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 293  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 294  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 295  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 296  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 297  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 298  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 299  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 300  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 301  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 302  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 303  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 304  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 305  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 306  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 307  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 308  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 309  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 310  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 311  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 312  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 313  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 314  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 315  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 316  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 317  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 318  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 319  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 320  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 321  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 322  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 323  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 324  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 325  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 326  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 327  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 328  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 329  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 330  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 331  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 332  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 333  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 334  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 335  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 336  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 337  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 338  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 339  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 340  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 341  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 342  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 343  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 344  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 345  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 346  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 347  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 348  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 349  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 350  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 351  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 352  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 353  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 354  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 355  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 356  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 357  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 358  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 359  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 360  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 361  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 362  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 363  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 364  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 365  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 366  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 367  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 368  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 
+ Atomic species : H
+ File name      : ann_H.ann-00150
+ 
+ ----------------------------------------------------------------------
+                           Training set info.                          
+ ----------------------------------------------------------------------
+ 
+ Training set file                   : PyBPDSA.train.scaled
+ Number of structures in the data set: 24049
+ 
+ Atomic species in training set      : 6
+   Species : C C1 H N O S
+ 
+ Average energy (eV/atom) : -0.140711
+ Minimum energy (eV/atom) : -1.000000
+ Maximum energy (eV/atom) : 1.000623
+ 
+ The input and output values have been normalized to [-1.0, 1.0].
+ Structures outside of this interval will not be used for training.
+   Energy scaling factor: 1.049667
+   Atomic energy shift  : -0.952683
+ 
+ Number of layers :   5
+ 
+ Number of nodes (without bias) 
+ and activation type per layer :
+ 
+       1 :   264
+       2 :   160  rectified linear unit (relu)
+       3 :    40  rectified linear unit (relu)
+       4 :     8  rectified linear unit (relu)
+       5 :     1  linear function (linear)
+ 
+ Dynamically allocated words :   37699315 ( 294525.90 KB)
+ 
+ Total number of weights (incl. bias) :    49177
+ 
+ Structural fingerprint (SF) set-up for H
+ 
+ 
+ 
+ environment types: C  C1 H  N  O  S  
+ minimal distance : 0.75 Angstrom
+ maximal cut-off  : 6.50 Angstrom
+ size of basis    : 264
+ evaluations      : 201303
+ 
+ Basis function type Behler2011
+ 
+ [see also: J. Behler, J. Chem. Phys. 134 (2011) 074106]
+ 
+ 
+      G  parameters
+ 
+   1  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.003
+   2  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.035
+   3  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.070
+   4  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.125
+   5  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.212
+   6  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.350
+   7  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.708
+   8  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   1.521
+   9  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.003
+  10  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.035
+  11  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.070
+  12  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.125
+  13  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.212
+  14  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.350
+  15  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.708
+  16  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   1.521
+  17  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.003
+  18  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.035
+  19  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.070
+  20  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.125
+  21  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.212
+  22  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.350
+  23  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.708
+  24  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   1.521
+  25  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.003
+  26  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.035
+  27  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.070
+  28  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.125
+  29  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.212
+  30  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.350
+  31  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.708
+  32  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   1.521
+  33  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.003
+  34  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.035
+  35  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.070
+  36  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.125
+  37  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.212
+  38  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.350
+  39  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.708
+  40  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   1.521
+  41  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  42  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  43  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  44  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  45  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  46  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  47  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  48  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  49  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  50  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  51  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  52  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  53  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  54  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  55  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  56  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  57  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  58  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  59  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  60  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  61  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  62  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  63  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  64  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  65  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  66  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  67  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  68  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  69  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  70  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  71  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  72  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  73  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  74  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  75  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  76  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  77  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  78  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  79  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  80  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  81  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  82  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  83  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  84  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  85  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  86  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  87  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  88  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  89  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  90  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  91  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  92  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  93  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  94  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  95  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  96  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  97  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  98  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  99  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 100  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 101  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 102  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 103  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 104  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 105  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 106  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 107  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 108  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 109  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 110  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 111  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 112  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 113  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 114  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 115  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 116  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 117  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 118  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 119  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 120  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 121  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 122  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 123  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 124  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 125  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 126  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 127  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 128  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 129  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 130  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 131  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 132  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 133  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 134  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 135  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 136  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 137  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 138  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 139  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 140  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 141  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 142  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 143  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 144  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 145  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 146  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 147  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 148  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 149  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 150  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 151  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 152  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 153  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 154  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 155  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 156  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 157  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 158  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 159  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 160  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 161  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 162  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 163  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 164  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 165  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 166  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 167  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 168  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 169  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 170  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 171  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 172  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 173  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 174  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 175  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 176  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 177  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 178  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 179  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 180  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 181  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 182  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 183  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 184  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 185  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 186  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 187  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 188  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 189  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 190  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 191  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 192  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 193  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 194  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 195  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 196  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 197  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 198  4  type2=N   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 199  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 200  4  type2=N   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 201  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 202  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 203  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 204  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 205  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 206  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 207  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 208  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 209  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 210  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 211  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 212  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 213  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 214  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 215  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 216  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 217  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 218  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 219  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 220  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 221  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 222  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 223  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 224  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 225  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 226  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 227  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 228  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 229  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 230  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 231  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 232  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 233  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 234  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 235  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 236  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 237  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 238  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 239  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 240  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 241  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 242  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 243  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 244  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 245  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 246  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 247  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 248  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 249  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 250  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 251  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 252  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 253  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 254  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 255  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 256  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 257  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 258  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 259  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 260  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 261  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 262  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 263  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 264  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 
+ Atomic species : N
+ File name      : ann_N.ann-00150
+ 
+ ----------------------------------------------------------------------
+                           Training set info.                          
+ ----------------------------------------------------------------------
+ 
+ Training set file                   : PyBPDSA.train.scaled
+ Number of structures in the data set: 24049
+ 
+ Atomic species in training set      : 6
+   Species : C C1 H N O S
+ 
+ Average energy (eV/atom) : -0.140711
+ Minimum energy (eV/atom) : -1.000000
+ Maximum energy (eV/atom) : 1.000623
+ 
+ The input and output values have been normalized to [-1.0, 1.0].
+ Structures outside of this interval will not be used for training.
+   Energy scaling factor: 1.049667
+   Atomic energy shift  : -0.952683
+ 
+ Number of layers :   5
+ 
+ Number of nodes (without bias) 
+ and activation type per layer :
+ 
+       1 :   320
+       2 :   160  rectified linear unit (relu)
+       3 :    40  rectified linear unit (relu)
+       4 :     8  rectified linear unit (relu)
+       5 :     1  linear function (linear)
+ 
+ Dynamically allocated words :   66799827 ( 521873.65 KB)
+ 
+ Total number of weights (incl. bias) :    58137
+ 
+ Structural fingerprint (SF) set-up for N
+ 
+ 
+ 
+ environment types: C  C1 H  N  O  S  
+ minimal distance : 0.75 Angstrom
+ maximal cut-off  : 6.50 Angstrom
+ size of basis    : 320
+ evaluations      : 38949
+ 
+ Basis function type Behler2011
+ 
+ [see also: J. Behler, J. Chem. Phys. 134 (2011) 074106]
+ 
+ 
+      G  parameters
+ 
+   1  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.003
+   2  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.035
+   3  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.070
+   4  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.125
+   5  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.212
+   6  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.350
+   7  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.708
+   8  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   1.521
+   9  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.003
+  10  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.035
+  11  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.070
+  12  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.125
+  13  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.212
+  14  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.350
+  15  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.708
+  16  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   1.521
+  17  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.003
+  18  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.035
+  19  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.070
+  20  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.125
+  21  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.212
+  22  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.350
+  23  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.708
+  24  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   1.521
+  25  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.003
+  26  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.035
+  27  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.070
+  28  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.125
+  29  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.212
+  30  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.350
+  31  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.708
+  32  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   1.521
+  33  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.003
+  34  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.035
+  35  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.070
+  36  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.125
+  37  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.212
+  38  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.350
+  39  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.708
+  40  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   1.521
+  41  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.003
+  42  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.035
+  43  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.070
+  44  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.125
+  45  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.212
+  46  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.350
+  47  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.708
+  48  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   1.521
+  49  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  50  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  51  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  52  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  53  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  54  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  55  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  56  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  57  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  58  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  59  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  60  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  61  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  62  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  63  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  64  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  65  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  66  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  67  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  68  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  69  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  70  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  71  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  72  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  73  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  74  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  75  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  76  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  77  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  78  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  79  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  80  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  81  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  82  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  83  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  84  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  85  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  86  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  87  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  88  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  89  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  90  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  91  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  92  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  93  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  94  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  95  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  96  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  97  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  98  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  99  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 100  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 101  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 102  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 103  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 104  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 105  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 106  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 107  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 108  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 109  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 110  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 111  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 112  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 113  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 114  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 115  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 116  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 117  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 118  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 119  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 120  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 121  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 122  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 123  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 124  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 125  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 126  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 127  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 128  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 129  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 130  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 131  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 132  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 133  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 134  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 135  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 136  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 137  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 138  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 139  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 140  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 141  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 142  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 143  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 144  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 145  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 146  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 147  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 148  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 149  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 150  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 151  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 152  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 153  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 154  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 155  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 156  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 157  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 158  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 159  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 160  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 161  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 162  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 163  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 164  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 165  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 166  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 167  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 168  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 169  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 170  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 171  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 172  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 173  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 174  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 175  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 176  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 177  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 178  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 179  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 180  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 181  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 182  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 183  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 184  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 185  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 186  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 187  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 188  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 189  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 190  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 191  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 192  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 193  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 194  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 195  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 196  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 197  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 198  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 199  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 200  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 201  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 202  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 203  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 204  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 205  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 206  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 207  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 208  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 209  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 210  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 211  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 212  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 213  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 214  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 215  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 216  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 217  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 218  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 219  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 220  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 221  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 222  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 223  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 224  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 225  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 226  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 227  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 228  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 229  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 230  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 231  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 232  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 233  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 234  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 235  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 236  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 237  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 238  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 239  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 240  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 241  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 242  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 243  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 244  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 245  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 246  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 247  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 248  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 249  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 250  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 251  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 252  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 253  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 254  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 255  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 256  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 257  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 258  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 259  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 260  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 261  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 262  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 263  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 264  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 265  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 266  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 267  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 268  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 269  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 270  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 271  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 272  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 273  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 274  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 275  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 276  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 277  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 278  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 279  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 280  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 281  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 282  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 283  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 284  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 285  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 286  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 287  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 288  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 289  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 290  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 291  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 292  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 293  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 294  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 295  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 296  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 297  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 298  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 299  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 300  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 301  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 302  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 303  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 304  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 305  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 306  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 307  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 308  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 309  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 310  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 311  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 312  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 313  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 314  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 315  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 316  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 317  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 318  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 319  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 320  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 
+ Atomic species : O
+ File name      : ann_O.ann-00150
+ 
+ ----------------------------------------------------------------------
+                           Training set info.                          
+ ----------------------------------------------------------------------
+ 
+ Training set file                   : PyBPDSA.train.scaled
+ Number of structures in the data set: 24049
+ 
+ Atomic species in training set      : 6
+   Species : C C1 H N O S
+ 
+ Average energy (eV/atom) : -0.140711
+ Minimum energy (eV/atom) : -1.000000
+ Maximum energy (eV/atom) : 1.000623
+ 
+ The input and output values have been normalized to [-1.0, 1.0].
+ Structures outside of this interval will not be used for training.
+   Energy scaling factor: 1.049667
+   Atomic energy shift  : -0.952683
+ 
+ Number of layers :   5
+ 
+ Number of nodes (without bias) 
+ and activation type per layer :
+ 
+       1 :   352
+       2 :   160  rectified linear unit (relu)
+       3 :    40  rectified linear unit (relu)
+       4 :     8  rectified linear unit (relu)
+       5 :     1  linear function (linear)
+ 
+ Dynamically allocated words :   88728403 ( 693190.65 KB)
+ 
+ Total number of weights (incl. bias) :    63257
+ 
+ Structural fingerprint (SF) set-up for O
+ 
+ 
+ 
+ environment types: C  C1 H  N  O  S  
+ minimal distance : 0.75 Angstrom
+ maximal cut-off  : 6.50 Angstrom
+ size of basis    : 352
+ evaluations      : 63342
+ 
+ Basis function type Behler2011
+ 
+ [see also: J. Behler, J. Chem. Phys. 134 (2011) 074106]
+ 
+ 
+      G  parameters
+ 
+   1  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.003
+   2  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.035
+   3  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.070
+   4  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.125
+   5  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.212
+   6  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.350
+   7  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.708
+   8  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   1.521
+   9  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.003
+  10  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.035
+  11  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.070
+  12  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.125
+  13  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.212
+  14  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.350
+  15  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.708
+  16  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   1.521
+  17  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.003
+  18  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.035
+  19  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.070
+  20  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.125
+  21  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.212
+  22  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.350
+  23  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.708
+  24  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   1.521
+  25  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.003
+  26  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.035
+  27  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.070
+  28  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.125
+  29  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.212
+  30  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.350
+  31  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.708
+  32  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   1.521
+  33  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.003
+  34  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.035
+  35  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.070
+  36  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.125
+  37  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.212
+  38  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.350
+  39  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.708
+  40  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   1.521
+  41  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.003
+  42  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.035
+  43  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.070
+  44  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.125
+  45  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.212
+  46  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.350
+  47  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   0.708
+  48  2  type2=S   Rc =   6.500  Rs =   0.000  eta =   1.521
+  49  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  50  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  51  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  52  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  53  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  54  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  55  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  56  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  57  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  58  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  59  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  60  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  61  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  62  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  63  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  64  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  65  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  66  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  67  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  68  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  69  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  70  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  71  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  72  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  73  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  74  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  75  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  76  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  77  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  78  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  79  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  80  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  81  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  82  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  83  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  84  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  85  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  86  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  87  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  88  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  89  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  90  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  91  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  92  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  93  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  94  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  95  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  96  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  97  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  98  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  99  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 100  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 101  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 102  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 103  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 104  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 105  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 106  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 107  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 108  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 109  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 110  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 111  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 112  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 113  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 114  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 115  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 116  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 117  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 118  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 119  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 120  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 121  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 122  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 123  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 124  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 125  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 126  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 127  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 128  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 129  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 130  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 131  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 132  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 133  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 134  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 135  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 136  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 137  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 138  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 139  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 140  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 141  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 142  4  type2=C   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 143  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 144  4  type2=C   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 145  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 146  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 147  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 148  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 149  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 150  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 151  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 152  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 153  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 154  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 155  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 156  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 157  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 158  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 159  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 160  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 161  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 162  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 163  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 164  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 165  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 166  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 167  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 168  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 169  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 170  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 171  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 172  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 173  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 174  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 175  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 176  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 177  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 178  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 179  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 180  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 181  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 182  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 183  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 184  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 185  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 186  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 187  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 188  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 189  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 190  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 191  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 192  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 193  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 194  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 195  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 196  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 197  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 198  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 199  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 200  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 201  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 202  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 203  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 204  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 205  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 206  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 207  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 208  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 209  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 210  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 211  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 212  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 213  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 214  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 215  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 216  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 217  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 218  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 219  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 220  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 221  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 222  4  type2=C1  type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 223  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 224  4  type2=C1  type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 225  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 226  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 227  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 228  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 229  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 230  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 231  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 232  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 233  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 234  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 235  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 236  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 237  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 238  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 239  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 240  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 241  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 242  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 243  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 244  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 245  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 246  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 247  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 248  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 249  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 250  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 251  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 252  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 253  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 254  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 255  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 256  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 257  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 258  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 259  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 260  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 261  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 262  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 263  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 264  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 265  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 266  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 267  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 268  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 269  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 270  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 271  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 272  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 273  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 274  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 275  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 276  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 277  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 278  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 279  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 280  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 281  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 282  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 283  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 284  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 285  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 286  4  type2=H   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 287  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 288  4  type2=H   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 289  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 290  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 291  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 292  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 293  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 294  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 295  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 296  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 297  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 298  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 299  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 300  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 301  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 302  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 303  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 304  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 305  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 306  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 307  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 308  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 309  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 310  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 311  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 312  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 313  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 314  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 315  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 316  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 317  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 318  4  type2=N   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 319  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 320  4  type2=N   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 321  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 322  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 323  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 324  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 325  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 326  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 327  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 328  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 329  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 330  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 331  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 332  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 333  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 334  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 335  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 336  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 337  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 338  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 339  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 340  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 341  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 342  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 343  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 344  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 345  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 346  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 347  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 348  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 349  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 350  4  type2=O   type3=S   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 351  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 352  4  type2=O   type3=S   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 
+ Atomic species : S
+ File name      : ann_S.ann-00150
+ 
+ ----------------------------------------------------------------------
+                           Training set info.                          
+ ----------------------------------------------------------------------
+ 
+ Training set file                   : PyBPDSA.train.scaled
+ Number of structures in the data set: 24049
+ 
+ Atomic species in training set      : 6
+   Species : C C1 H N O S
+ 
+ Average energy (eV/atom) : -0.140711
+ Minimum energy (eV/atom) : -1.000000
+ Maximum energy (eV/atom) : 1.000623
+ 
+ The input and output values have been normalized to [-1.0, 1.0].
+ Structures outside of this interval will not be used for training.
+   Energy scaling factor: 1.049667
+   Atomic energy shift  : -0.952683
+ 
+ Number of layers :   5
+ 
+ Number of nodes (without bias) 
+ and activation type per layer :
+ 
+       1 :   264
+       2 :   160  rectified linear unit (relu)
+       3 :    40  rectified linear unit (relu)
+       4 :     8  rectified linear unit (relu)
+       5 :     1  linear function (linear)
+ 
+ Dynamically allocated words :   37699315 ( 294525.90 KB)
+ 
+ Total number of weights (incl. bias) :    49177
+ 
+ Structural fingerprint (SF) set-up for S
+ 
+ 
+ 
+ environment types: C  C1 H  N  O  S  
+ minimal distance : 0.75 Angstrom
+ maximal cut-off  : 6.50 Angstrom
+ size of basis    : 264
+ evaluations      : 21114
+ 
+ Basis function type Behler2011
+ 
+ [see also: J. Behler, J. Chem. Phys. 134 (2011) 074106]
+ 
+ 
+      G  parameters
+ 
+   1  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.003
+   2  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.035
+   3  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.070
+   4  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.125
+   5  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.212
+   6  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.350
+   7  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   0.708
+   8  2  type2=C   Rc =   6.500  Rs =   0.000  eta =   1.521
+   9  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.003
+  10  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.035
+  11  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.070
+  12  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.125
+  13  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.212
+  14  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.350
+  15  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   0.708
+  16  2  type2=C1  Rc =   6.500  Rs =   0.000  eta =   1.521
+  17  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.003
+  18  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.035
+  19  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.070
+  20  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.125
+  21  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.212
+  22  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.350
+  23  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   0.708
+  24  2  type2=H   Rc =   6.500  Rs =   0.000  eta =   1.521
+  25  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.003
+  26  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.035
+  27  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.070
+  28  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.125
+  29  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.212
+  30  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.350
+  31  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   0.708
+  32  2  type2=N   Rc =   6.500  Rs =   0.000  eta =   1.521
+  33  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.003
+  34  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.035
+  35  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.070
+  36  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.125
+  37  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.212
+  38  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.350
+  39  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   0.708
+  40  2  type2=O   Rc =   6.500  Rs =   0.000  eta =   1.521
+  41  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  42  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  43  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  44  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  45  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  46  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  47  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  48  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  49  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  50  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  51  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  52  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  53  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  54  4  type2=C   type3=C   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  55  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  56  4  type2=C   type3=C   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  57  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  58  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  59  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  60  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  61  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  62  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  63  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  64  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  65  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  66  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  67  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  68  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  69  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  70  4  type2=C   type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  71  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  72  4  type2=C   type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  73  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  74  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  75  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  76  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  77  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  78  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  79  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  80  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  81  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  82  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  83  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+  84  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+  85  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+  86  4  type2=C   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+  87  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+  88  4  type2=C   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+  89  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+  90  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+  91  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+  92  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+  93  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+  94  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+  95  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+  96  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+  97  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+  98  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+  99  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 100  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 101  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 102  4  type2=C   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 103  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 104  4  type2=C   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 105  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 106  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 107  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 108  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 109  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 110  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 111  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 112  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 113  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 114  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 115  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 116  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 117  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 118  4  type2=C   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 119  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 120  4  type2=C   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 121  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 122  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 123  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 124  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 125  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 126  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 127  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 128  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 129  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 130  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 131  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 132  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 133  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 134  4  type2=C1  type3=C1  Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 135  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 136  4  type2=C1  type3=C1  Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 137  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 138  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 139  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 140  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 141  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 142  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 143  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 144  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 145  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 146  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 147  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 148  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 149  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 150  4  type2=C1  type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 151  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 152  4  type2=C1  type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 153  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 154  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 155  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 156  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 157  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 158  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 159  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 160  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 161  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 162  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 163  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 164  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 165  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 166  4  type2=C1  type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 167  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 168  4  type2=C1  type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 169  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 170  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 171  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 172  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 173  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 174  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 175  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 176  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 177  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 178  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 179  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 180  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 181  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 182  4  type2=C1  type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 183  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 184  4  type2=C1  type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 185  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 186  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 187  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 188  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 189  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 190  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 191  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 192  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 193  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 194  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 195  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 196  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 197  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 198  4  type2=H   type3=H   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 199  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 200  4  type2=H   type3=H   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 201  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 202  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 203  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 204  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 205  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 206  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 207  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 208  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 209  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 210  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 211  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 212  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 213  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 214  4  type2=H   type3=N   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 215  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 216  4  type2=H   type3=N   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 217  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 218  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 219  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 220  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 221  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 222  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 223  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 224  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 225  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 226  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 227  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 228  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 229  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 230  4  type2=H   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 231  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 232  4  type2=H   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 233  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 234  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 235  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 236  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 237  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 238  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 239  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 240  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 241  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 242  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 243  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 244  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 245  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 246  4  type2=N   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 247  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 248  4  type2=N   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 249  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.000
+ 250  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.000
+ 251  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.000
+ 252  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.000
+ 253  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.003
+ 254  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.003
+ 255  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.003
+ 256  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.003
+ 257  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.030
+ 258  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.030
+ 259  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.030
+ 260  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.030
+ 261  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   1.000  eta =   0.090
+ 262  4  type2=O   type3=O   Rc =   6.500  lambda =   1.000  zeta =   2.000  eta =   0.090
+ 263  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   1.000  eta =   0.090
+ 264  4  type2=O   type3=O   Rc =   6.500  lambda =  -1.000  zeta =   2.000  eta =   0.090
+ 
+ ----------------------------------------------------------------------
+                           Energy evaluation                           
+ ----------------------------------------------------------------------
+ 
+ Structure number  : 1
+ File name         : ../../xsf_Py-Py_re/CONTCAR_00000.xsf
+ Number of atoms   : 16
+ Number of species : 4
+ 
+ Lattice vectors (Angstrom):
+ 
+   a = (       27.00000000       0.00000000       0.00000000 )
+   b = (        0.00000000      27.00000000       0.00000000 )
+   c = (        0.00000000       0.00000000      20.00000000 )
+ 
+ Cartesian atomic coordinates (input):
+ 
+          x             y             z      
+         (Ang)         (Ang)         (Ang)   
+ --------------------------------------------
+ C      11.735381      7.217898     10.000000
+ C      13.140162      7.229423     10.000000
+ C1     13.551249      8.552643     10.000000
+ C1     11.303115      8.534915     10.000000
+ C1     14.854541      9.118490     10.000000
+ C1     17.103238      9.100708     10.000000
+ C      16.691097     10.424528     10.000000
+ C      15.286172     10.435863     10.000000
+ H      11.093993      6.338339     10.000000
+ H      13.799140      6.361486     10.000000
+ H      17.345655     11.296206     10.000000
+ H      14.646342     11.316145     10.000000
+ H      12.406143     10.336712     10.000000
+ H      15.953395      7.317761     10.000000
+ N      12.421261      9.320609     10.000000
+ N      15.972318      8.333599     10.000000
+ 
+ Cohesive energy            :          -30.55581622 eV
+ Total energy               :         -104.55401114 eV
+ 
+                                                                       
+                          2018-09-28  15:31:43                         
+                                                                       
+ ======================================================================
+                      Atomic Energy Network done.                      
+ ======================================================================
